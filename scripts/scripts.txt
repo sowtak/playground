@@ -1,0 +1,5 @@
+#空ディレクトリを探索してそこに指定のファイルをコピー
+find . -type d -exec cp file {} \;
+#カレントディレクトリを再帰的に探索し、指定のディレクトリの有無を出力する
+find . -type d \! -exec test -e '{}/README' \; -print
+
