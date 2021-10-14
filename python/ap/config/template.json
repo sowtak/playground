@@ -1,0 +1,6 @@
+{
+  "task": {
+    "program":["./main.py" ,"./package.json"],
+    "submit": "./main.py"
+  }
+}

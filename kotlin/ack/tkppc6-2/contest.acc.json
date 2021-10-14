@@ -1,0 +1,152 @@
+{
+  "contest": {
+    "id": "tkppc6-2",
+    "title": "技術室奥プログラミングコンテスト#6 Day2",
+    "url": "https://atcoder.jp/contests/tkppc6-2"
+  },
+  "tasks": [
+    {
+      "id": "tkppc6_2_a",
+      "label": "A",
+      "title": ">_<",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_b",
+      "label": "B",
+      "title": "Replace to the Other",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_c",
+      "label": "C",
+      "title": "Strange Paper",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_d",
+      "label": "D",
+      "title": "NG Word Game",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_d",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_e",
+      "label": "E",
+      "title": "Exactly K Triangles",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_e",
+      "directory": {
+        "path": "e",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_f",
+      "label": "F",
+      "title": "Shortest Path Construction",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_f",
+      "directory": {
+        "path": "f",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_g",
+      "label": "G",
+      "title": "Must be Distinct!",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_g",
+      "directory": {
+        "path": "g",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_h",
+      "label": "H",
+      "title": "Reversi Pieces",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_h",
+      "directory": {
+        "path": "h",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_i",
+      "label": "I",
+      "title": "旅人計画問題2",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_i",
+      "directory": {
+        "path": "i",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_j",
+      "label": "J",
+      "title": "Common Divisors Shortest Path Queries",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_j",
+      "directory": {
+        "path": "j",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_k",
+      "label": "K",
+      "title": "Ball in the Box 2",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_k",
+      "directory": {
+        "path": "k",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_l",
+      "label": "L",
+      "title": "Go To",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_l",
+      "directory": {
+        "path": "l",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    },
+    {
+      "id": "tkppc6_2_m",
+      "label": "M",
+      "title": "山分け",
+      "url": "https://atcoder.jp/contests/tkppc6-2/tasks/tkppc6_2_m",
+      "directory": {
+        "path": "m",
+        "testdir": "tests",
+        "submit": "./main.kt"
+      }
+    }
+  ]
+}

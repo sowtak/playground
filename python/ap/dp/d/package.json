@@ -1,0 +1,8 @@
+{
+  "name": "x",
+  "private":true,
+  "scripts": {
+    "test": "oj t -c \"py main.py\"",
+    "submit": "..\\..\\acss.bat"
+  }
+}

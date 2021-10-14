@@ -1,0 +1,8 @@
+{
+  "name": "x",
+  "private":true,
+  "scripts": {
+    "test": "oj t -c \"java -jar out.jar\" -d ./tests",
+    "submit": "acc s"
+  }
+}

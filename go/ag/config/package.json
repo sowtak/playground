@@ -1,0 +1,8 @@
+{
+  "name": "x",
+  "private":true,
+  "scripts": {
+    "test": "oj t -c \"go run main.go\" -d ./tests",
+    "submit": "acc s"
+  }
+}

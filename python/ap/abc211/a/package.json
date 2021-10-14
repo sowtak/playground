@@ -1,0 +1,8 @@
+{
+  "name": "x",
+  "private":true,
+  "scripts": {
+    "test": "oj t -c \"python3 main.py\" -d ./tests",
+    "submit": "echo \"fuck\""
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "task": {
+    "program":["./main.go" ,"./package.json"],
+    "submit": "./main.go"
+  }
+}
