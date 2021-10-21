@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "auto-zoom-opener",
+	"short_name": "azo",
+	"version": "1.0.0",
+	"description": "Open zoom link from moodle page",
+	"icons": {
+	  "16": "icon16.png",
+	  "128": "icon128.png",
+	  "192": "icon192.png"
+	}
+	
+}
+	
