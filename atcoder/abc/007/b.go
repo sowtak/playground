@@ -20,23 +20,15 @@ func main() {
 	defer wr.Flush()
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
- 
-  h,w:=ni(),ni()
-  a:=make([][]int, h)
-  for i:=0;i<h;i++ {
-    a[i]=nis(w)
-  }
-  for i1:=0;i1<h;i1++ {
-    for i2:=i1+1;i2<h;i2++ {
-      for j1:=0;j1<w;j1++ {
-        for j2:=j1+1;j2<w;j2++ {
-          if !(a[i1][j1]+a[i2][j2] <= a[i2][j1]+a[i1][j2]) {
-            fmt.Println("No")
-            os.Exit(0)
-          }
-        }
-      }
+  
+  s:=ns()
+  if len(s) == 1{
+    if s=="a" {
+      fmt.Println(-1)
+    } else {
+      fmt.Println(string(s[0]-1))
     }
+  } else {
+    fmt.Println(s[:len(s)-1])
   }
-  fmt.Println("Yes")
 }

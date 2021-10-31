@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -21,22 +22,10 @@ func main() {
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
  
-  h,w:=ni(),ni()
-  a:=make([][]int, h)
-  for i:=0;i<h;i++ {
-    a[i]=nis(w)
+  n,k,x,y:=ni(),ni(),ni(),ni()
+  if k>=n {
+    fmt.Println(x*n)
+  } else {
+    fmt.Println(x*k + (n-k)*y)
   }
-  for i1:=0;i1<h;i1++ {
-    for i2:=i1+1;i2<h;i2++ {
-      for j1:=0;j1<w;j1++ {
-        for j2:=j1+1;j2<w;j2++ {
-          if !(a[i1][j1]+a[i2][j2] <= a[i2][j1]+a[i1][j2]) {
-            fmt.Println("No")
-            os.Exit(0)
-          }
-        }
-      }
-    }
-  }
-  fmt.Println("Yes")
 }
