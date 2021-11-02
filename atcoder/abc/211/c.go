@@ -21,5 +21,7 @@ func main() {
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
  
+  s:=ns()
+  mod:=1e9+7
 
 }
