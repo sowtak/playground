@@ -23,16 +23,19 @@ func main() {
 	sc.Buffer(make([]byte, 1001), 1001001)
  
   s:=ns()
-  for i:=0;i<len(s);i++ {
-    if s[i]=='o'||s[i]=='k'||s[i]=='u' {
-      continue
-    } else if s[i]=='c' && s[i+1]=='h' {
-      i++
-      continue
-    } else {
-      fmt.Println("NO")
-      os.Exit(0)
+  ans:=1145151919810
+  for i:=0;i<len(s)-2;i++ {
+    n,_:=strconv.Atoi(s[i:i+3])
+    if  abs(n-753) < ans {
+      ans = abs(n-753)
     }
   }
-  fmt.Println("YES")
+  fmt.Println(ans)
+}
+
+func abs(x int) int {
+  if x < 0 {
+    x = -x
+  }
+  return x
 }

@@ -20,32 +20,29 @@ func main() {
 	defer wr.Flush()
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
- 
-  r:=[]int{0,0,0}
-  max:=0
-  a:=ni()
-  if a>max {
-    max=a
+  
+
+  a,b,c:=ni(),ni(),ni()
+  aa,bb,cc:=1,1,1
+  if a>b {
+    bb++
   }
-  b:=ni()
-  if b>max {
-    max=b
-    r[0]++
-  }else if b<max{
-    r[1]++
+  if a>c {
+    cc++
   }
-  c:=ni()
-  if c>max {
-    r[0]++
-    r[1]++
-  }else if c<max {
-    if a>c && b>c {
-      r[2]+=2
-    } else {
-      r[2]++
-    }
+  if b>a {
+    aa++
   }
-  for i:=0;i<3;i++ {
-    fmt.Println(r[i]+1)
+  if b>c {
+    cc++
   }
+  if c>a {
+    aa++
+  }
+  if c>b {
+    bb++
+  }
+  fmt.Println(aa)
+  fmt.Println(bb)
+  fmt.Println(cc)
 }

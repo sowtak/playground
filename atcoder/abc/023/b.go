@@ -22,17 +22,6 @@ func main() {
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
  
-  s:=ns()
-  for i:=0;i<len(s);i++ {
-    if s[i]=='o'||s[i]=='k'||s[i]=='u' {
-      continue
-    } else if s[i]=='c' && s[i+1]=='h' {
-      i++
-      continue
-    } else {
-      fmt.Println("NO")
-      os.Exit(0)
-    }
-  }
-  fmt.Println("YES")
+  n,s:=ni(),ns()
+  
 }

@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -23,16 +22,21 @@ func main() {
 	sc.Buffer(make([]byte, 1001), 1001001)
  
   s:=ns()
-  for i:=0;i<len(s);i++ {
-    if s[i]=='o'||s[i]=='k'||s[i]=='u' {
-      continue
-    } else if s[i]=='c' && s[i+1]=='h' {
-      i++
-      continue
+  pre:=s[0:1]
+  ans:=s[0:1]
+  cnt:=1
+  for i:=1;i<len(s);i++ {
+    if s[i:i+1]==pre {
+      cnt++
     } else {
-      fmt.Println("NO")
-      os.Exit(0)
+      ans+=strconv.Itoa(cnt)
+      ans+=s[i:i+1]
+      pre=s[i:i+1]
+      cnt=1
     }
   }
-  fmt.Println("YES")
+  if !(ans[len(ans)-1] >= '1' && ans[len(ans)-1] <= '9') {
+    ans+=strconv.Itoa(cnt)
+  }
+  fmt.Println(ans)
 }

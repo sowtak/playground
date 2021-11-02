@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -22,17 +21,14 @@ func main() {
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
  
-  s:=ns()
-  for i:=0;i<len(s);i++ {
-    if s[i]=='o'||s[i]=='k'||s[i]=='u' {
-      continue
-    } else if s[i]=='c' && s[i+1]=='h' {
-      i++
-      continue
-    } else {
-      fmt.Println("NO")
-      os.Exit(0)
+  n,m:=ni(),ni()
+  for i:=0;i<=1;i++ {
+    for j:=0;j<=n-i;j++ {
+      if 2*j+3*i+4*(n-i-j) == m {
+        fmt.Println(j,i,n-i-j)
+        os.Exit(0)
+      }
     }
   }
-  fmt.Println("YES")
+  fmt.Println("-1 -1 -1")
 }
