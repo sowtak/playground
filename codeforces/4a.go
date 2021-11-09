@@ -15,13 +15,16 @@ func ni() int { a, _ := strconv.Atoi(ns()); return a}
 func ni64() int64 { a, _ := strconv.ParseInt(ns(), 10, 64); return a}
 func nf() float64 { a, _ := strconv.ParseFloat(ns(), 64); return a}
 func nis(n int) []int {a := make([]int, n);for i:=0;i<n;i++ {a[i] = ni()};return a}
-func out(a ...interface{}) {fmt.Println(a)}
 
 func main() {
 	defer wr.Flush()
 	sc.Split(bufio.ScanWords)
 	sc.Buffer(make([]byte, 1001), 1001001)
  
-  a,b:=ni(),ni()
-  fmt.Println(a-b)
+  n:=ni()
+  if n%2==0 && n>=4 {
+    fmt.Println("YES")
+  } else {
+    fmt.Println("NO")
+  }
 }

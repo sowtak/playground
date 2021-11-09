@@ -23,5 +23,5 @@ func main() {
 	sc.Buffer(make([]byte, 1001), 1001001)
  
   n,s:=ni(),ns()
-  
+  w 
 }
