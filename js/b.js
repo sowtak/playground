@@ -1,2 +1,3 @@
-var num = 1
-num.isFinite()
+console.log('fuck'.charCodeAt(0))
+
+const compressedReadableStream = inputReadableStream.pipeThrough(new CompressionStream("gzip"))

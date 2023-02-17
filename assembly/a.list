@@ -1,0 +1,18 @@
+     1                                  section	.text
+     2                                     global _start     ;must be declared for linker (ld)
+     3                                  	
+     4                                  _start:	            ;tells linker entry point
+     5 00000000 BA0E000000                 mov	edx,len     ;message length
+     6 00000005 B9[00000000]               mov	ecx,msg     ;message to write
+     7 0000000A BB01000000                 mov	ebx,1       ;file descriptor (stdout)
+     8 0000000F B804000000                 mov	eax,4       ;system call number (sys_write)
+     9 00000014 CD80                       int	0x80        ;call kernel
+    10                                  	
+    11 00000016 B801000000                 mov	eax,1       ;system call number (sys_exit)
+    12 0000001B CD80                       int	0x80        ;call kernel
+    13                                  
+    14                                  section	.data
+    15 00000000 48656C6C6F2C20776F-     msg db 'Hello, world!', 0xa  ;string to be printed
+    15 00000009 726C64210A         
+    16                                  len equ $ - msg     ;length of the string
+    17                                  
