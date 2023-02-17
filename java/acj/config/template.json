@@ -1,6 +1,0 @@
-{
-  "task": {
-    "program":["./Main.java" ,"./package.json"],
-    "submit": "./Main.java"
-  }
-}
